@@ -6,28 +6,20 @@
   <meta name="keywords" content="">
   <meta name="description" content="HMM | 杂记">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="隐马尔科夫（HMM）简介隐马尔科夫可以用于序列标注问题，比如分词过程，假设分词按照BEOS过程，在这里，隐马尔科夫就是从隐马尔科夫模型生成隐藏状态序列 基本参数 初始概率向量π：就是我一开始分别是B、E、O、S的概率如{”B“:0.6,“S”:0.4}  状态转移概率A：就是我从其中一个隐状态到达另一个隐藏状态的概率，如：当前为B，则下一个字符是E的概率是0.8  观测概率矩阵B：就是从当前隐藏状">
+<meta name="description" content="TextCNN图示标签（空格分隔）： 深度学习 自然语言处理  论文地址 https:&#x2F;&#x2F;www.aclweb.org&#x2F;anthology&#x2F;D14-1181  图示 下图分了四部分，从左到右分别是a，b，c，d，我们分开解释 a, 就是输入的文本，假设最大文本长度是100，词向量维度是300，所以a（输入文本）的维度是100 * 300 b，进行卷积，利用的不同大小（2 * 300,3300,4*">
 <meta property="og:type" content="article">
-<meta property="og:title" content="HMM">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;2019&#x2F;12&#x2F;11&#x2F;HMM&#x2F;index.html">
+<meta property="og:title" content="TextCNN图示">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;2019&#x2F;12&#x2F;16&#x2F;TextCNN%E5%9B%BE%E7%A4%BA&#x2F;index.html">
 <meta property="og:site_name" content="杂记">
-<meta property="og:description" content="隐马尔科夫（HMM）简介隐马尔科夫可以用于序列标注问题，比如分词过程，假设分词按照BEOS过程，在这里，隐马尔科夫就是从隐马尔科夫模型生成隐藏状态序列 基本参数 初始概率向量π：就是我一开始分别是B、E、O、S的概率如{”B“:0.6,“S”:0.4}  状态转移概率A：就是我从其中一个隐状态到达另一个隐藏状态的概率，如：当前为B，则下一个字符是E的概率是0.8  观测概率矩阵B：就是从当前隐藏状">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rndhslkqst9grmlw7cp6igxa&#x2F;image_1ct7m09th1vrc1fka1ocg1hlpdsc19.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;ajbpkxtsq2cw8jhk2j4om94v&#x2F;image_1ct7s9ddu1me0n3a1rbj1ma3d4b1m.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;hu0dfdd03hv2gprvde22ognc&#x2F;image_1ct7stn7t1djokus1a981v5f1oh923.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rgjv6ktf8b3ojk3ekaenog4q&#x2F;image_1ct7tbskpdsv1imvusd1n351eeg30.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;d5wmk0vol91r16tqjptr91vi&#x2F;image_1ct7thvnr1cc1meg1fqjqg41mir4a.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;2ixhl5vzm6c4rujmo8wuyi2r&#x2F;image_1ct7uasv41msu75a2bo1qbi1h0354.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;m1kskhlj91fv4gpped3i9l0p&#x2F;image_1ct7unpjb56e16n01kfpucojs25h.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;biradjdr5hetfundnzad526s&#x2F;image_1ct7up4o61b51106v1jttmon1rbm6h.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;pcr9nhin8uz23le4pl6i6cun&#x2F;image_1ct7vlb5o1lpd4811jt1gerppo98.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;h9s4edk4fhmcfvxgqsrt93of&#x2F;image_1ct7vlugu4991mju18aa1hf719gf9l.png">
-<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;j6a9vkvck5f5vipr9cvd2bkm&#x2F;image_1ct7vtgeh1dlr25g3f61npoff2a2.png">
-<meta property="article:published_time" content="2019-12-11T01:19:19.993Z">
-<meta property="article:modified_time" content="2019-12-11T01:21:15.316Z">
+<meta property="og:description" content="TextCNN图示标签（空格分隔）： 深度学习 自然语言处理  论文地址 https:&#x2F;&#x2F;www.aclweb.org&#x2F;anthology&#x2F;D14-1181  图示 下图分了四部分，从左到右分别是a，b，c，d，我们分开解释 a, 就是输入的文本，假设最大文本长度是100，词向量维度是300，所以a（输入文本）的维度是100 * 300 b，进行卷积，利用的不同大小（2 * 300,3300,4*">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;19h0dsltc1kz66tka0h6hmb0&#x2F;image_1cv24kopv12dd1lsssn72o180b28.png">
+<meta property="article:published_time" content="2019-12-15T16:00:00.000Z">
+<meta property="article:modified_time" content="2019-12-16T01:21:08.162Z">
 <meta property="article:author" content="船帆有洞">
+<meta property="article:tag" content="自然语言处理">
+<meta property="article:tag" content="文本分类">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rndhslkqst9grmlw7cp6igxa&#x2F;image_1ct7m09th1vrc1fka1ocg1hlpdsc19.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;19h0dsltc1kz66tka0h6hmb0&#x2F;image_1cv24kopv12dd1lsssn72o180b28.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
@@ -127,7 +119,7 @@
         
     
         
-        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes" target="_blank">
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=756464383&site=qq&menu=yes" target="_blank">
             
                 <svg class="iconfont-svg" aria-hidden="true">
                     <use xlink:href="#icon-qq"></use>
@@ -409,7 +401,7 @@
 <h2 id="结论"><a href="#结论" class="headerlink" title="结论"></a>结论</h2><p><code>上面就是一个简单的HMM实现的例子，其中求解的五步过程就是维特比算法</code></p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jiang_zhenkang@163.com </span>
     </div>
 </article>
 
