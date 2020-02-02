@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c6388db3-bd54-4506-a3fb-1a73f73c1f20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/公务员面试1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/公务员面试1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/3-hexo" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/3-hexo/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/3-hexo/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/clean-blog" beforeDir="false" afterPath="$PROJECT_DIR$/themes/clean-blog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/clean-blog/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/clean-blog/_config.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.deploy_git" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XD6DqH5clt6VyQUWCI6K1NbZMr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -43,6 +49,7 @@
       <updated>1580568200914</updated>
       <workItem from="1580568209875" duration="367000" />
       <workItem from="1580568591895" duration="273000" />
+      <workItem from="1580604541117" duration="1115000" />
     </task>
     <servers />
   </component>
