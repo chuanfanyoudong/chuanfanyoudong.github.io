@@ -1,10 +1,11 @@
 ---
-title: 激活windows2010
-date: 2020-04-09
-categories: "随笔"
-tags:
-     - 生活小tips
-description: 激活windows2010
+title: hexo博客导入图片
+date: 2020-02-02
+categories: "博客"
+tags: #文章標籤 可以省略
+     - hexo
+description: hexo博客导入图片
+
 ---
 
 # 激活windows office记录
@@ -32,4 +33,4 @@ description: 激活windows2010
 * 然后点击Ream Office 2010
 * 最后点击Activate Office 2010 VL
 
-好了，激活完成
+好了，激活完成！
