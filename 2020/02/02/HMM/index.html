@@ -6,19 +6,28 @@
   <meta name="keywords" content="">
   <meta name="description" content="HMM | 杂记">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="安装并激活windows 2010 office">
+<meta name="description" content="隐马尔科夫（HMM）简介隐马尔科夫可以用于序列标注问题，比如分词过程，假设分词按照BEOS过程，在这里，隐马尔科夫就是从隐马尔科夫模型生成隐藏状态序列 基本参数 初始概率向量π：就是我一开始分别是B、E、O、S的概率如{”B“:0.6,“S”:0.4}  状态转移概率A：就是我从其中一个隐状态到达另一个隐藏状态的概率，如：当前为B，则下一个字符是E的概率是0.8  观测概率矩阵B：就是从当前隐藏状">
 <meta property="og:type" content="article">
-<meta property="og:title" content="激活windows office 2010">
-<meta property="og:url" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;2020&#x2F;04&#x2F;10&#x2F;%E9%9A%8F%E7%AC%94&#x2F;%E6%BF%80%E6%B4%BBwindows&#x2F;index.html">
+<meta property="og:title" content="HMM">
+<meta property="og:url" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;2020&#x2F;02&#x2F;02&#x2F;HMM&#x2F;index.html">
 <meta property="og:site_name" content="杂记">
-<meta property="og:description" content="安装并激活windows 2010 office">
-<meta property="og:image" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;images&#x2F;%E9%9A%8F%E7%AC%94&#x2F;20200410-01.png">
-<meta property="article:published_time" content="2020-04-10T14:43:36.266Z">
-<meta property="article:modified_time" content="2020-04-10T14:45:01.044Z">
+<meta property="og:description" content="隐马尔科夫（HMM）简介隐马尔科夫可以用于序列标注问题，比如分词过程，假设分词按照BEOS过程，在这里，隐马尔科夫就是从隐马尔科夫模型生成隐藏状态序列 基本参数 初始概率向量π：就是我一开始分别是B、E、O、S的概率如{”B“:0.6,“S”:0.4}  状态转移概率A：就是我从其中一个隐状态到达另一个隐藏状态的概率，如：当前为B，则下一个字符是E的概率是0.8  观测概率矩阵B：就是从当前隐藏状">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rndhslkqst9grmlw7cp6igxa&#x2F;image_1ct7m09th1vrc1fka1ocg1hlpdsc19.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;ajbpkxtsq2cw8jhk2j4om94v&#x2F;image_1ct7s9ddu1me0n3a1rbj1ma3d4b1m.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;hu0dfdd03hv2gprvde22ognc&#x2F;image_1ct7stn7t1djokus1a981v5f1oh923.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rgjv6ktf8b3ojk3ekaenog4q&#x2F;image_1ct7tbskpdsv1imvusd1n351eeg30.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;d5wmk0vol91r16tqjptr91vi&#x2F;image_1ct7thvnr1cc1meg1fqjqg41mir4a.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;2ixhl5vzm6c4rujmo8wuyi2r&#x2F;image_1ct7uasv41msu75a2bo1qbi1h0354.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;m1kskhlj91fv4gpped3i9l0p&#x2F;image_1ct7unpjb56e16n01kfpucojs25h.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;biradjdr5hetfundnzad526s&#x2F;image_1ct7up4o61b51106v1jttmon1rbm6h.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;pcr9nhin8uz23le4pl6i6cun&#x2F;image_1ct7vlb5o1lpd4811jt1gerppo98.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;h9s4edk4fhmcfvxgqsrt93of&#x2F;image_1ct7vlugu4991mju18aa1hf719gf9l.png">
+<meta property="og:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;j6a9vkvck5f5vipr9cvd2bkm&#x2F;image_1ct7vtgeh1dlr25g3f61npoff2a2.png">
+<meta property="article:published_time" content="2020-02-02T00:48:02.686Z">
+<meta property="article:modified_time" content="2019-12-11T01:21:15.316Z">
 <meta property="article:author" content="船帆有洞">
-<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http:&#x2F;&#x2F;blog.chuanfanyoudong.com&#x2F;images&#x2F;%E9%9A%8F%E7%AC%94&#x2F;20200410-01.png">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;static.zybuluo.com&#x2F;chuanfanyoudong&#x2F;rndhslkqst9grmlw7cp6igxa&#x2F;image_1ct7m09th1vrc1fka1ocg1hlpdsc19.png">
 
 
 <link rel="icon" href="/img/avatar.jpg">
