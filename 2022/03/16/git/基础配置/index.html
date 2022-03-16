@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>TextCNN图示 | 杂记</title>
-  <meta name="keywords" content=" 自然语言处理 , 文本分类 ">
-  <meta name="description" content="TextCNN图示 | 杂记">
+  <title>git/基础配置 | 杂记</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="git/基础配置 | 杂记">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="安装并激活windows 2010 office">
 <meta property="og:type" content="article">
@@ -417,38 +417,24 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-TextCNN图示" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-git/基础配置" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">TextCNN图示</h1>
+        <h1 class="article-title">git/基础配置</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            
-                <a  data-rel="算法">算法</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            
-            <a class="color2">自然语言处理</a>
-            
-            <a class="color5">文本分类</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2022-03-16 08:24:55'>2019-12-17 00:00</time>
+        创建时间:<time class="date" title='更新时间: 2022-03-16 08:43:08'>2022-03-16 08:43</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:400</span>
+        <span>字数:0</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -478,7 +464,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#TextCNN图示"><span class="toc-text">TextCNN图示</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#论文地址"><span class="toc-text">论文地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图示"><span class="toc-text">图示</span></a></li></ol></li></ol>
+        
     
 <style>
     .left-col .switch-btn,
@@ -494,22 +480,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="TextCNN图示"><a href="#TextCNN图示" class="headerlink" title="TextCNN图示"></a>TextCNN图示</h1><p>标签（空格分隔）： 深度学习 自然语言处理</p>
-<hr>
-<h2 id="论文地址"><a href="#论文地址" class="headerlink" title="论文地址"></a>论文地址</h2><ul>
-<li><a href="https://www.aclweb.org/anthology/D14-1181" target="_blank" rel="noopener">https://www.aclweb.org/anthology/D14-1181</a></li>
-</ul>
-<h2 id="图示"><a href="#图示" class="headerlink" title="图示"></a>图示</h2><ul>
-<li>下图分了四部分，从左到右分别是a，b，c，d，我们分开解释</li>
-<li>a, 就是输入的文本，假设最大文本长度是100，词向量维度是300，所以a（输入文本）的维度是100 * 300</li>
-<li>b，进行卷积，利用的不同大小（2 * 300,3<em>300,4*300,.）的卷积核进行卷积，比如用3 * 300的卷积核，则对文本进行纵向便利，因为是3 * 300，所以首先会遍历前三个字符（wait for the， 这三个词的总维度3 * 300）,此时3 * 300 与遍历的3</em> 300相乘，那么求和会得到一个值，然后遍历（for the video, 这三个词的总维度3 * 300）所以又会得到一个值 ，最后我们会得到（100 - 3 + 1）= 98个值；</li>
-<li>上面说的是我们只用一个3 * 300的卷积核，那么我们用200个呢，最后的结果就是生成一个98 * 200维度向量。</li>
-<li>c,这里是最大池化，对98这个维度，最大池化，就是取98个数里面最大的，所以最终98维度会变成1维度，所以最终会生成1 * 200维度。</li>
-<li>上面只是用一种卷积核的情况，那么我们用很多种呢？比如（2 * 300,3<em>300,4</em>300），所以我们会生成3个1*200维度的向量。所以最终我们把这三个拼起来变成1 * 600维度</li>
-<li>d，上全连接层，把1 * 600 转化成 1 * 类数</li>
-</ul>
-<p><img src="http://static.zybuluo.com/chuanfanyoudong/19h0dsltc1kz66tka0h6hmb0/image_1cv24kopv12dd1lsssn72o180b28.png" alt="image_1cv24kopv12dd1lsssn72o180b28.png-112.9kB"></p>
-
+        
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。有问题需要讨论可以在github提issue https://github.com/chuanfanyoudong/chuanfanyoudong.github.io-/issues，也可以邮件至 jiang_zhenkang@163.com </span>
     </div>
@@ -522,12 +493,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>TextCNN图示</p>
-    <p><span class="copy-title">文章字数:</span><span class="post-count">400</span></p>
+    <p><span class="copy-title">文章标题:</span>git/基础配置</p>
+    <p><span class="copy-title">文章字数:</span><span class="post-count">0</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="船帆有洞">船帆有洞</a></p>
-    <p><span class="copy-title">发布时间:</span>2019-12-17, 00:00:00</p>
-    <p><span class="copy-title">最后更新:</span>2022-03-16, 08:24:55</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/12/17/TextCNN%E5%9B%BE%E7%A4%BA/" title="TextCNN图示">http://blog.chuanfanyoudong.com/2019/12/17/TextCNN%E5%9B%BE%E7%A4%BA/</a>
+    <p><span class="copy-title">发布时间:</span>2022-03-16, 08:43:08</p>
+    <p><span class="copy-title">最后更新:</span>2022-03-16, 08:43:08</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2022/03/16/git/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/" title="git/基础配置">http://blog.chuanfanyoudong.com/2022/03/16/git/%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
