@@ -1,6 +1,6 @@
 ﻿---
 title: TextCNN图示
-date: 2019-12-16
+date: 2019-12-17
 categories: 算法 #文章分類目錄 可以省略
 tags: #文章標籤 可以省略
      - 自然语言处理

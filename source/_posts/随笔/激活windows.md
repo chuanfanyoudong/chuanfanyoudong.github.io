@@ -1,10 +1,10 @@
 ---
-title: hexo博客导入图片
-date: 2020-02-02
-categories: "博客"
+title: 激活windows office 2010
+date: 2020-0410
+categories: "随笔"
 tags: #文章標籤 可以省略
-     - hexo
-description: hexo博客导入图片
+     - 随笔
+description: 安装并激活windows 2010 office
 
 ---
 
@@ -31,6 +31,6 @@ description: hexo博客导入图片
 * 首先点击install/Uninstall KMservice
 * 然后点击Restart Service
 * 然后点击Ream Office 2010
-* 最后点击Activate Office 2010 VL
+* 最后点击Activate Office 2010 VL 选2
 
 好了，激活完成！

@@ -19,7 +19,7 @@ description: hexo博客markdown文件上传到github分支
 在这里本着不能太罗嗦的原则，我选择了第二种方案，基本上需要下面几步：
 * 1.新建一个分支source（名字可自取），用来存储markdown文件 
     
-    ![新建分支](../../images/blog/20200202-01.jpg)
+    
 
 * 2.将**chuanfanyoudong.github.io**的默认分支有改为source
     
