@@ -1,5 +1,10 @@
 ﻿---
 title: HMM
+date: 2021-12-17
+categories: 算法 #文章分類目錄 可以省略
+tags: #文章標籤 可以省略
+     - 自然语言处理
+description: #你對本頁的描述 可以省略
 ---
 
 # 隐马尔科夫（HMM）
